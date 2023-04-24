@@ -23,6 +23,14 @@ button2.Position = UDim2.new(0,42,0,42)
 button2.Parent = gui
 button2.Text = "Start"
 
+local button3 = Instance.new("TextButton")
+button3.SizeConstraint = "RelativeYY"
+button3.Size = UDim2.new(0,42,0,42)
+button3.BackgroundColor3 = Color3.new(1,0.5,0.5)
+button3.Position = UDim2.new(0,84,0,42)
+button3.Parent = gui
+button3.Text = "List"
+
 local function b1()
 gui:Destroy()
 end
@@ -31,5 +39,11 @@ local function b2()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxer228s/Loader/main/" .. Textt.Text .. ".lua"))()
 end
 
+local function b3()
+local list = game:HttpGet("https://raw.githubusercontent.com/Robloxer228s/Loader/main/ScriptList.txt")
+print(list)
+end
+
 button1.Activated:Connect(b1)
 button2.Activated:Connect(b2)
+button3.Activated:Connect(b3)
