@@ -21,7 +21,7 @@ button2.Size = UDim2.new(0,42,0,42)
 button2.BackgroundColor3 = Color3.new(1,0.5,0.5)
 button2.Position = UDim2.new(0,42,0,42)
 button2.Parent = gui
-button2.Text = "Blocks"
+button2.Text = "Start"
 
 local function b1()
 gui:Destroy()
