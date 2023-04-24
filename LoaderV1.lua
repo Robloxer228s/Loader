@@ -41,7 +41,18 @@ end
 
 local function b3()
 local list = game:HttpGet("https://raw.githubusercontent.com/Robloxer228s/Loader/main/ScriptList.txt")
-print(list)
+local listOn = not listOn
+if listOn then
+local listText = Instance.new("TextLabel")
+listText.SizeConstraint = "RelativeYY"
+listText.Size = UDim2.new(0,168,0,720)
+listText.BackgroundColor3 = Color3.new(0.5,0.5,0.5)
+listText.Position = UDim2.new(0,1350,0,0)
+listText.Parent = gui
+listText.Text = list
+else
+listText:Destroy()
+end
 end
 
 button1.Activated:Connect(b1)
