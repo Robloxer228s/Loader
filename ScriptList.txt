@@ -6,3 +6,4 @@ J: Infinity Jump for PC
 Dex:Dex Explorer
 BT: BTools
 TPT: TPTool
+EG: Energize Gui (not official)
