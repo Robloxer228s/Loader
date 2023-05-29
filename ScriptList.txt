@@ -2,3 +2,4 @@ MM2
 2: TimGUI
 3: LuckyBlocksBattle
 PJ: Infinity Jump for mobile
+J: Infinity Jump for PC
